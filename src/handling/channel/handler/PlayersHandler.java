@@ -1072,11 +1072,11 @@ public class PlayersHandler {
         }
         int type = slea.readByte();
         if (type == 0) { // 角色訊息
-            String charmessage = slea.readMapleAsciiString();
+            String CharMessage = slea.readMapleAsciiString();
             if (CharMessage.length() < 25) {
-                    c.getPlayer().setCharMessage(CharMessage);
+                    c.getPlayer().setcharmessage(CharMessage);
                 }
-            break;
+            
         } else if (type == 1) { // 表情
             int expression = slea.readByte();
             c.getPlayer().setexpression(expression);
