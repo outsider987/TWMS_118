@@ -46,11 +46,11 @@ public class DBConPool {
 
     private void InitDBConPool() {
         dataSource = new DruidDataSource();
-        dataSource.setName("mysql_pool");
+        dataSource.setName("MapleStory");
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://127.0.0.1:3306/v119?useUnicode=true&characterEncoding=UTF8");
+        dataSource.setUrl("jdbc:mysql://127.0.0.1:3306/v18?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF8");
         dataSource.setUsername("root");
-        dataSource.setPassword("root");
+        dataSource.setPassword("password");
         dataSource.setInitialSize(30);
         dataSource.setMinIdle(50);
         dataSource.setMaxActive(200);
@@ -62,5 +62,6 @@ public class DBConPool {
         dataSource.setTestWhileIdle(true);
         dataSource.setMaxWait(60000);
         dataSource.setUseUnfairLock(true);
+
     }
 }
