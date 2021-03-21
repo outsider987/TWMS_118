@@ -2,7 +2,7 @@ package client.inventory;
 
 import client.MapleCharacter;
 import database.DBConPool;
-import com.mysql.jdbc.exceptions.MySQLIntegrityConstraintViolationException;
+//import com.mysql.jdbc.exceptions.MySQLIntegrityConstraintViolationException;
 import java.io.Serializable;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -15,10 +15,10 @@ import tools.FileoutputUtil;
 public class MapleRing implements Serializable {
 
     private static final long serialVersionUID = 9179541993413738579L;
-    private int ringId;
-    private int ringId2;
-    private int partnerId;
-    private int itemId;
+    private final int ringId;
+    private final int ringId2;
+    private final int partnerId;
+    private final int itemId;
     private String partnerName;
     private boolean equipped = false;
 
@@ -100,7 +100,7 @@ public class MapleRing implements Serializable {
         //[1] = partner1, [0] = partner2
         try {
             addToDB(itemid, partner1, partner2.getName(), partner2.getId(), ringID);
-        } catch (MySQLIntegrityConstraintViolationException mslcve) {
+        } catch (java.sql.SQLException e) {
             return ringID;
         }
         return ringID;
@@ -111,7 +111,7 @@ public class MapleRing implements Serializable {
         //[1] = partner1, [0] = partner2
         try {
             addToDB(itemid, partner1, partner2, id2, ringID);
-        } catch (MySQLIntegrityConstraintViolationException mslcve) {
+        } catch (java.sql.SQLException e) {
             return 0;
         }
         MapleInventoryManipulator.addRing(partner1, itemid, ringID[1], sn);
