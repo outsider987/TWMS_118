@@ -48,7 +48,7 @@ public class DBConPool {
         dataSource = new DruidDataSource();
         dataSource.setName("MapleStory");
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://127.0.0.1:3306/v18?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF8&useSSL=false");
+        dataSource.setUrl("jdbc:mysql://127.0.0.1:3306/tms118?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF8&useSSL=false");
         dataSource.setUsername("root");
         dataSource.setPassword("password");
         dataSource.setInitialSize(30);
