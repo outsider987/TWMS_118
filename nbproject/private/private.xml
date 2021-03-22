@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/Private_Story/TWMS_118/src/client/MapleClient.java</file>
+            <file>file:/D:/Private_Story/TWMS_118/src/tools/packet/PacketHelper.java</file>
+            <file>file:/D:/Private_Story/TWMS_118/src/handling/world/sidekick/MapleSidekick.java</file>
+            <file>file:/D:/Private_Story/TWMS_118/src/constants/ServerConstants.java</file>
+            <file>file:/D:/Private_Story/TWMS_118/src/constants/ServerConstantsMBean.java</file>
+            <file>file:/D:/Private_Story/TWMS_118/src/database/DBConPool.java</file>
+            <file>file:/D:/Private_Story/TWMS_118/world.properties</file>
+            <file>file:/D:/Private_Story/TWMS_118/src/client/MapleCharacter.java</file>
+            <file>file:/D:/Private_Story/TWMS_118/src/constants/WorldConstants.java</file>
+            <file>file:/D:/Private_Story/TWMS_118/src/client/SkillFactory.java</file>
+            <file>file:/D:/Private_Story/TWMS_118/src/tools/wztosql/FixCharSets.java</file>
+            <file>file:/D:/Private_Story/TWMS_118/src/provider/MapleDataProvider.java</file>
+            <file>file:/D:/Private_Story/TWMS_118/src/constants/GameConstants.java</file>
+            <file>file:/D:/Private_Story/TWMS_118/src/client/inventory/MapleRing.java</file>
+        </group>
+    </open-files>
+</project-private>
