@@ -1767,7 +1767,7 @@ CREATE TABLE `shopitems` (
   `expiration` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`shopitemid`),
   KEY `shopid` (`shopid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of shopitems
